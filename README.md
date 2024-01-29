@@ -1,6 +1,10 @@
-Design Patterns Tests
+# Design Patterns Tests
 
-composer require phpunit/phpunit
+#### 01.- Install Phpunit<br>
+##### composer require phpunit/phpunit 
 
-php vendor/bin/phpunit --testsuite data-mapper
-php vendor/bin/phpunit --testsuite adapter
+#### 02.- Data Mapper
+##### php vendor/bin/phpunit --testsuite data-mapper
+
+#### 03.- Adapter
+##### php vendor/bin/phpunit --testsuite adapter
