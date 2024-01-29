@@ -16,6 +16,9 @@
         <testsuite name="adapter">
             <directory>src/Structural/Adapter/Tests</directory>
         </testsuite>
+        <testsuite name="bridge">
+            <directory>src/Structural/Bridge/Tests</directory>
+        </testsuite>
     </testsuites>
     <source restrictDeprecations="true" restrictNotices="true" restrictWarnings="true">
         <include>
