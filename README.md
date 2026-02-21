@@ -1,3 +1,118 @@
+# PHP Design Patterns
+
+Colección de más de 30 patrones de diseño implementados en PHP, organizados por categorías: creacionales, estructurales y de comportamiento.
+
+## Requisitos
+
+- PHP 8.1 o superior
+- Composer
+
+## Instalación
+
+```bash
+git clone <tu-repositorio>
+cd php-design-patterns
+composer install
+```
+
+Si es la primera vez y no tienes `composer.json`, inicializa el proyecto:
+
+```bash
+composer init --name="david/php-design-patterns" --type="project" --no-interaction
+composer require --dev phpunit/phpunit ^9
+```
+
+## Ejecutar los tests
+
+Ejecutar toda la suite de tests:
+
+```bash
+vendor/bin/phpunit
+```
+
+Con salida detallada (testdox):
+
+```bash
+vendor/bin/phpunit --testdox
+```
+
+Ejecutar un fichero de tests específico:
+
+```bash
+vendor/bin/phpunit tests/CreationalPatternsTest.php
+vendor/bin/phpunit tests/StructuralPatternsTest.php
+vendor/bin/phpunit tests/BehavioralStandalonePatternsTest.php
+vendor/bin/phpunit tests/CreationalStructuralIndexTest.php
+vendor/bin/phpunit tests/BehavioralIndexPatternsTest.php
+```
+
+Ejecutar un test concreto por nombre:
+
+```bash
+vendor/bin/phpunit --filter testSingletonReturnsSameInstance
+```
+
+## Estructura del proyecto
+
+```
+php-design-patterns/
+├── phpunit.xml
+├── composer.json
+├── README.md
+├── tests/
+│   ├── bootstrap.php
+│   ├── CreationalPatternsTest.php
+│   ├── StructuralPatternsTest.php
+│   ├── BehavioralStandalonePatternsTest.php
+│   ├── CreationalStructuralIndexTest.php
+│   └── BehavioralIndexPatternsTest.php
+├── AbstractFactory/
+├── Adapter/
+├── Bridge/
+├── Builder/
+├── ChainOfResponsibility/
+├── Command/
+├── Composite/
+├── DataMapper/
+├── Decorator/
+├── DependencyInjection/
+├── EAV/
+├── Facade/
+├── FactoryMethod/
+├── FluentInterface/
+├── Flyweight/
+├── Interpreter/
+├── Iterator/
+├── Mediator/
+├── Memento/
+├── NullObject/
+├── Observer/
+├── Pool/
+├── Proxy/
+├── Registry/
+├── Repository/
+├── ServiceLocator/
+├── SimpleFactory/
+├── Singleton/
+├── Specification/
+├── State/
+├── StaticFactory/
+├── Strategy/
+├── TemplateMethod/
+└── Visitor/
+```
+
+## Cobertura de tests
+
+| Fichero de test | Patrones | Tests |
+|---|---|---|
+| CreationalPatternsTest | SimpleFactory, StaticFactory, Pool | 12 |
+| StructuralPatternsTest | DataMapper, DependencyInjection, FluentInterface, Registry, ServiceLocator | 17 |
+| BehavioralStandalonePatternsTest | NullObject, Specification, EAV, Repository | 25 |
+| CreationalStructuralIndexTest | AbstractFactory, Adapter, Bridge, Builder | 22 |
+| BehavioralIndexPatternsTest | ChainOfResponsibility, Command, Composite, Decorator, Facade, FactoryMethod, Flyweight, Proxy, Singleton, Strategy, Interpreter, Mediator, Visitor, Memento, State, TemplateMethod, Iterator, Observer | 71 |
+| **Total** | **30+ patrones** | **147 tests, 230 assertions** |
+
 # PHP Design Patterns — Catálogo Completo con Diagramas UML
 
 Colección de **35+ patrones de diseño** implementados en PHP con diagramas UML, organizados según la clasificación del **Gang of Four (GoF)**: Creacionales, Estructurales y de Comportamiento, más patrones adicionales de arquitectura empresarial. Cada patrón incluye código funcional y su correspondiente diagrama UML. Entorno Dockerizado para ejecución inmediata.
