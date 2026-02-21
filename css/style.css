@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #EFF3FC;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+.container .form-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .form-control .form-entry {
+    display: flex;
+    align-items: center;
+}
+.container .form-control .form-entry h3 {
+    font-weight: 500;
+    font-size: 0.1rem;
+}
+.container .form-control .form-entry input {
+    margin: 0 0.3rem;
+    border: none;
+    outline: none;
+    border: 1px solid #a8acb4;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    width: 4rem;
+}
+.container .form-control .form-search {
+    display: flex;
+    align-items: center;
+}
+.container .form-control .form-search input, .container .form-control .form-search .search-btn {
+    padding: 0.7rem 0.75rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #a8acb4;
+}
+.container .form-control .form-search input {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 250px;
+    border-left: none;
+}
+.container .form-control .form-search .search-btn {
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    color: #808491;
+}
+.container .table {
+    margin-top: 4rem;
+    width: 100%;
+}
+.container .table .table-header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+    color: #6e768b;
+}
+.container .table .table-body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background-color: #fff;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px #d4e0fc;
+}
+.container .table .table-body img {
+    width: 4rem;
+}
+.container .table .table-body h4 {
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+h1{
+    font-size:1.3rem!important
+}
+
+h3{
+    font-size:1rem!important
+}
+
+.table-body a{
+    color:#333!important;
+}
